@@ -21,5 +21,19 @@ While some people build simplified blockchains, they all needed trust between th
 
 Even banks are using blockchains internally to lower costs, gain greater security and fewer errors. The blockchain underneath bitcoin works in the same way but it is not stored on some central server secured from the public but on a public network, the internet. The blockchain is a chain of blocks with transactions. The blockchain is not the product but the protocol, in a way bitcoin is the prodcut. While http makes the internet work it's not the product but many prodcuts are being built on top of the http protocol.
 Every 10 minutes a block on the bitcoin blockchain is verified, cleared and stored. It is linked to the block before it creating this chain. To steal a bitcoin, the history of it on the blockchain has to be changed completely, making theft particially impossible. 
-While putting a coin representing some monetary value is one way of using the blockchain as its protocol there are many more. Any certificate or license, deeds, titles, educational degrees or even votes and medical records can be kept on a blockchain. Origins of food and their ingredients can be tracked. Everything that can be represented in code can be stored on a blockchain. Especially with the upcoming internet of things more and more use cases become apparent. Transaction of goods and information between these small devices could run on a global ledgers, a ledger of everything.
+While putting a coin on a blockchain representing some monetary value is one way of using the blockchain as its protocol there are many more. Any certificate or license, deeds, titles, educational degrees or even votes and medical records can be kept on a blockchain. Origins of food and their ingredients can be tracked. Everything that can be represented in code can be stored on a blockchain. Especially with the upcoming internet of things more and more use cases become apparent. Transaction of goods and information between these small devices could run on a global ledgers, a ledger of everything.
 
+# Trust
+
+Trust in business is the expectation that the other part will act with integrity. 
++ Honesty
++ Consideration
++ Accountability
++ Transparency
+Because we can't know with whom we are doing business with on the internet we need to rely on third parties. By doing so they charge a small fee. With blockchain this fee can be given back to the network instead of a single company. With smart contracts on top of the blockchain salaries for company CEOs can even be automated, only giving them a bonus if the company is doing well. Tax money can be tracked with a blockchain and will ensure it is being used where it was promised. Through the transparancy trust is build.
+
+
+# How does the blockchain work?
+
+First we need to send a message with a transaction to the network. The address to where I am sending the transaction is the public key of that person and then I sign the message with my private key. There is no way to reverse a transaction once it is made. Then the network, a network of nodes, will verify a block with all the current transactions.
+A math problem will need to be solved to verify the block. That's what miners do. A block consists of all the transactions, the hash of the previous block, the hash of the current block and a *nonce*. The miners are trying to figure out the nonce so the block's hash matches the current block's hash. It's called *proof of work*. When a node solves the problem it gets a reward from the network and the block gets added to the blockchain.
